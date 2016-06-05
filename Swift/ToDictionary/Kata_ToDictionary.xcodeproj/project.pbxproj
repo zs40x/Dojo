@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4924FAB1D02F80C00ADDC75 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4924FAA1D02F80C00ADDC75 /* Result.swift */; };
+		D4DBA8A61D02F1E1009DEA4A /* Kata_ToDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = D4DBA8A51D02F1E1009DEA4A /* Kata_ToDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4DBA8AD1D02F1E1009DEA4A /* Kata_ToDictionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4DBA8A21D02F1E1009DEA4A /* Kata_ToDictionary.framework */; };
+		D4DBA8B21D02F1E1009DEA4A /* Kata_ToDictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DBA8B11D02F1E1009DEA4A /* Kata_ToDictionaryTests.swift */; };
+		D4DBA8BD1D02F2FA009DEA4A /* StringToDictionaryConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DBA8BC1D02F2FA009DEA4A /* StringToDictionaryConverter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4DBA8AE1D02F1E1009DEA4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4DBA8991D02F1E0009DEA4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4DBA8A11D02F1E0009DEA4A;
+			remoteInfo = Kata_ToDictionary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4924FAA1D02F80C00ADDC75 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		D4DBA8A21D02F1E1009DEA4A /* Kata_ToDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kata_ToDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DBA8A51D02F1E1009DEA4A /* Kata_ToDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kata_ToDictionary.h; sourceTree = "<group>"; };
+		D4DBA8A71D02F1E1009DEA4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4DBA8AC1D02F1E1009DEA4A /* Kata_ToDictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kata_ToDictionaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DBA8B11D02F1E1009DEA4A /* Kata_ToDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kata_ToDictionaryTests.swift; sourceTree = "<group>"; };
+		D4DBA8B31D02F1E1009DEA4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4DBA8BC1D02F2FA009DEA4A /* StringToDictionaryConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringToDictionaryConverter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4DBA89E1D02F1E0009DEA4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DBA8A91D02F1E1009DEA4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DBA8AD1D02F1E1009DEA4A /* Kata_ToDictionary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4DBA8981D02F1E0009DEA4A = {
+			isa = PBXGroup;
+			children = (
+				D4DBA8A41D02F1E1009DEA4A /* Kata_ToDictionary */,
+				D4DBA8B01D02F1E1009DEA4A /* Kata_ToDictionaryTests */,
+				D4DBA8A31D02F1E1009DEA4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4DBA8A31D02F1E1009DEA4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4DBA8A21D02F1E1009DEA4A /* Kata_ToDictionary.framework */,
+				D4DBA8AC1D02F1E1009DEA4A /* Kata_ToDictionaryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4DBA8A41D02F1E1009DEA4A /* Kata_ToDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				D4DBA8A51D02F1E1009DEA4A /* Kata_ToDictionary.h */,
+				D4DBA8A71D02F1E1009DEA4A /* Info.plist */,
+				D4DBA8BC1D02F2FA009DEA4A /* StringToDictionaryConverter.swift */,
+				D4924FAA1D02F80C00ADDC75 /* Result.swift */,
+			);
+			path = Kata_ToDictionary;
+			sourceTree = "<group>";
+		};
+		D4DBA8B01D02F1E1009DEA4A /* Kata_ToDictionaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4DBA8B11D02F1E1009DEA4A /* Kata_ToDictionaryTests.swift */,
+				D4DBA8B31D02F1E1009DEA4A /* Info.plist */,
+			);
+			path = Kata_ToDictionaryTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D4DBA89F1D02F1E0009DEA4A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DBA8A61D02F1E1009DEA4A /* Kata_ToDictionary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D4DBA8A11D02F1E0009DEA4A /* Kata_ToDictionary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4DBA8B61D02F1E1009DEA4A /* Build configuration list for PBXNativeTarget "Kata_ToDictionary" */;
+			buildPhases = (
+				D4DBA89D1D02F1E0009DEA4A /* Sources */,
+				D4DBA89E1D02F1E0009DEA4A /* Frameworks */,
+				D4DBA89F1D02F1E0009DEA4A /* Headers */,
+				D4DBA8A01D02F1E0009DEA4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kata_ToDictionary;
+			productName = Kata_ToDictionary;
+			productReference = D4DBA8A21D02F1E1009DEA4A /* Kata_ToDictionary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4DBA8AB1D02F1E1009DEA4A /* Kata_ToDictionaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4DBA8B91D02F1E1009DEA4A /* Build configuration list for PBXNativeTarget "Kata_ToDictionaryTests" */;
+			buildPhases = (
+				D4DBA8A81D02F1E1009DEA4A /* Sources */,
+				D4DBA8A91D02F1E1009DEA4A /* Frameworks */,
+				D4DBA8AA1D02F1E1009DEA4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4DBA8AF1D02F1E1009DEA4A /* PBXTargetDependency */,
+			);
+			name = Kata_ToDictionaryTests;
+			productName = Kata_ToDictionaryTests;
+			productReference = D4DBA8AC1D02F1E1009DEA4A /* Kata_ToDictionaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4DBA8991D02F1E0009DEA4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Stefan Mehnert";
+				TargetAttributes = {
+					D4DBA8A11D02F1E0009DEA4A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					D4DBA8AB1D02F1E1009DEA4A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D4DBA89C1D02F1E0009DEA4A /* Build configuration list for PBXProject "Kata_ToDictionary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D4DBA8981D02F1E0009DEA4A;
+			productRefGroup = D4DBA8A31D02F1E1009DEA4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4DBA8A11D02F1E0009DEA4A /* Kata_ToDictionary */,
+				D4DBA8AB1D02F1E1009DEA4A /* Kata_ToDictionaryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4DBA8A01D02F1E0009DEA4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DBA8AA1D02F1E1009DEA4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4DBA89D1D02F1E0009DEA4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4924FAB1D02F80C00ADDC75 /* Result.swift in Sources */,
+				D4DBA8BD1D02F2FA009DEA4A /* StringToDictionaryConverter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4DBA8A81D02F1E1009DEA4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4DBA8B21D02F1E1009DEA4A /* Kata_ToDictionaryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4DBA8AF1D02F1E1009DEA4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4DBA8A11D02F1E0009DEA4A /* Kata_ToDictionary */;
+			targetProxy = D4DBA8AE1D02F1E1009DEA4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D4DBA8B41D02F1E1009DEA4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D4DBA8B51D02F1E1009DEA4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D4DBA8B71D02F1E1009DEA4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Kata_ToDictionary/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.sme.Kata-ToDictionary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4DBA8B81D02F1E1009DEA4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Kata_ToDictionary/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.sme.Kata-ToDictionary";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D4DBA8BA1D02F1E1009DEA4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Kata_ToDictionaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.sme.Kata-ToDictionaryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D4DBA8BB1D02F1E1009DEA4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Kata_ToDictionaryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.sme.Kata-ToDictionaryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4DBA89C1D02F1E0009DEA4A /* Build configuration list for PBXProject "Kata_ToDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DBA8B41D02F1E1009DEA4A /* Debug */,
+				D4DBA8B51D02F1E1009DEA4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4DBA8B61D02F1E1009DEA4A /* Build configuration list for PBXNativeTarget "Kata_ToDictionary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DBA8B71D02F1E1009DEA4A /* Debug */,
+				D4DBA8B81D02F1E1009DEA4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4DBA8B91D02F1E1009DEA4A /* Build configuration list for PBXNativeTarget "Kata_ToDictionaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4DBA8BA1D02F1E1009DEA4A /* Debug */,
+				D4DBA8BB1D02F1E1009DEA4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4DBA8991D02F1E0009DEA4A /* Project object */;
+}
