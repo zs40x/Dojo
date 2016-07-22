@@ -26,6 +26,13 @@ class Stack<T>
     
     func pop() -> T? {
         
-        return self.stack.last
+        guard self.stack.count > 0 else { return nil }
+        
+        
+        let poppedItem = self.stack.last
+
+        self.stack.removeLast()
+        
+        return poppedItem
     }
 }

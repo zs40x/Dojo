@@ -11,14 +11,18 @@ import XCTest
 
 class StackTests: XCTestCase {
     
+    let oneIntegerStack = Stack(initialElements: [1])
+    
     func testEmptyStackPopReturnsNil() {
         XCTAssertNil(Stack().pop())
     }
     
     func testPopRetunsAnItem() {
-        
-        let stack = Stack(initialElements: [1])
-        
-        XCTAssertEqual(1, stack.pop())
+        XCTAssertEqual(1, oneIntegerStack.pop())
+    }
+    
+    func testPopReturnsSingleItemOnlyOnce() {
+        XCTAssertEqual(1, oneIntegerStack.pop())
+        XCTAssertNil(oneIntegerStack.pop())
     }
 }
