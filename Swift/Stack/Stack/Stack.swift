@@ -21,7 +21,7 @@ class Stack<T>
     
     
     func push(element: T) {
-        
+        self.stack.append(element)
     }
     
     func pop() -> T? {

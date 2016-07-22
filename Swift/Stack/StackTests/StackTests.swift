@@ -12,6 +12,7 @@ import XCTest
 class StackTests: XCTestCase {
     
     let oneIntegerStack = Stack(initialElements: [1])
+    let twoStringStack = Stack(initialElements: ["a","b"])
     
     func testEmptyStackPopReturnsNil() {
         XCTAssertNil(Stack().pop())
@@ -24,5 +25,20 @@ class StackTests: XCTestCase {
     func testPopReturnsSingleItemOnlyOnce() {
         XCTAssertEqual(1, oneIntegerStack.pop())
         XCTAssertNil(oneIntegerStack.pop())
+    }
+    
+    func testTowStringStackReturnsStringAndThenNil() {
+        XCTAssertEqual("b", twoStringStack.pop())
+        XCTAssertEqual("a", twoStringStack.pop())
+        XCTAssertNil(twoStringStack.pop())
+    }
+    
+    
+    func testPushedValueIsPopped() {
+        let intStack = Stack<Int>()
+        
+        intStack.push(1)
+        
+        XCTAssertEqual(1, intStack.pop())
     }
 }
