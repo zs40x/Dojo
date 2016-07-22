@@ -12,6 +12,12 @@ class Stack<T>
 {
     private var stack = [T]()
     
+    var content: [T] {
+        get {
+            return Array(self.stack)
+        }
+    }
+    
     
     init() { }
     

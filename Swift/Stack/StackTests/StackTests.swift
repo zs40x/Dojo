@@ -11,6 +11,7 @@ import XCTest
 
 class StackTests: XCTestCase {
     
+    let intStack = Stack<Int>()
     let oneIntegerStack = Stack(initialElements: [1])
     let twoStringStack = Stack(initialElements: ["a","b"])
     
@@ -35,27 +36,31 @@ class StackTests: XCTestCase {
     
     
     func testPushedValueIsPopped() {
-        let intStack = Stack<Int>()
-        
         intStack.push(1)
         
         XCTAssertEqual(1, intStack.pop())
     }
     
+    func testPushWithContentProperty() {
+        intStack.push(9)
+        intStack.push(3)
+        
+        XCTAssertEqual([9, 3], intStack.content)
+    }
+    
     
     func testAcceptanceTest() {
-        let stack = Stack<Int>()
         
-        stack.push(5)
-        XCTAssertEqual(5, stack.pop())
-        XCTAssertNil(stack.pop())
+        intStack.push(5)
+        XCTAssertEqual(5, intStack.pop())
+        XCTAssertNil(intStack.pop())
         
-        stack.push(7)
-        stack.push(9)
-        stack.push(1)
-        XCTAssertEqual(1, stack.pop())
-        XCTAssertEqual(9, stack.pop())
-        XCTAssertEqual(7, stack.pop())
-        XCTAssertNil(stack.pop())
+        intStack.push(7)
+        intStack.push(9)
+        intStack.push(1)
+        XCTAssertEqual(1, intStack.pop())
+        XCTAssertEqual(9, intStack.pop())
+        XCTAssertEqual(7, intStack.pop())
+        XCTAssertNil(intStack.pop())
     }
 }
