@@ -41,4 +41,21 @@ class StackTests: XCTestCase {
         
         XCTAssertEqual(1, intStack.pop())
     }
+    
+    
+    func testAcceptanceTest() {
+        let stack = Stack<Int>()
+        
+        stack.push(5)
+        XCTAssertEqual(5, stack.pop())
+        XCTAssertNil(stack.pop())
+        
+        stack.push(7)
+        stack.push(9)
+        stack.push(1)
+        XCTAssertEqual(1, stack.pop())
+        XCTAssertEqual(9, stack.pop())
+        XCTAssertEqual(7, stack.pop())
+        XCTAssertNil(stack.pop())
+    }
 }
