@@ -38,6 +38,10 @@ class FizzBuzz {
             return "Fizz"
         }
         
+        if number.isDivisibeBy(5) {
+            return "Buzz"
+        }
+        
         return number.toString()
     }
 }
