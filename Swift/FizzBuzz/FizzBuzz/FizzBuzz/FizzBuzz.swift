@@ -34,6 +34,10 @@ class FizzBuzz {
     
     private func fizzBizzResult(number: Int) -> String {
         
+        if number.isDivisibeBy(15) {
+            return "FizzBuzz"
+        }
+        
         if number.isDivisibeBy(3) {
             return "Fizz"
         }

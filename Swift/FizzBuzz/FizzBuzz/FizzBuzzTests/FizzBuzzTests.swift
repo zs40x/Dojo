@@ -27,4 +27,8 @@ class FizzBuzzTests: XCTestCase {
     func testDivisibleBy5ReturnsBuzz() {
         XCTAssertEqual("Buzz", runTest(5))
     }
+    
+    func testDivisibleBy15ReturnsFizzBuzz() {
+        XCTAssertEqual("FizzBuzz", runTest(15))
+    }
 }
