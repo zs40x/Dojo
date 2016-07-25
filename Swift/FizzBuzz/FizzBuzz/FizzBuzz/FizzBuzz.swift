@@ -10,6 +10,15 @@ import Foundation
 
 
 extension Int {
+    
+    func isZero() -> Bool {
+        return self == 0 ? true : false
+    }
+    
+    func toString() -> String {
+        return String(self)
+    }
+    
     func isDivisibeBy(divisor: Int) -> Bool {
         return self % divisor == 0 ? true : false
     }
@@ -20,14 +29,15 @@ class FizzBuzz {
     
     func play(number: Int) -> String {
         
-        if number == 0 {
-            return String(0)
-        }
+        return number.isZero() ? number.toString() : fizzBizzResult(number)
+    }
+    
+    private func fizzBizzResult(number: Int) -> String {
         
         if number.isDivisibeBy(3) {
             return "Fizz"
         }
         
-        return String(number)
+        return number.toString()
     }
 }
