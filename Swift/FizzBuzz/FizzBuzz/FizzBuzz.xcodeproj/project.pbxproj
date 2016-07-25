@@ -10,6 +10,7 @@
 		D4ED12181D4659DF006A7E0A /* FizzBuzz.h in Headers */ = {isa = PBXBuildFile; fileRef = D4ED12171D4659DF006A7E0A /* FizzBuzz.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4ED121F1D4659DF006A7E0A /* FizzBuzz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ED12141D4659DF006A7E0A /* FizzBuzz.framework */; };
 		D4ED12241D4659DF006A7E0A /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ED12231D4659DF006A7E0A /* FizzBuzzTests.swift */; };
+		D4ED122F1D465A06006A7E0A /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4ED122E1D465A06006A7E0A /* FizzBuzz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		D4ED121E1D4659DF006A7E0A /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4ED12231D4659DF006A7E0A /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 		D4ED12251D4659DF006A7E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4ED122E1D465A06006A7E0A /* FizzBuzz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				D4ED12171D4659DF006A7E0A /* FizzBuzz.h */,
 				D4ED12191D4659DF006A7E0A /* Info.plist */,
+				D4ED122E1D465A06006A7E0A /* FizzBuzz.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4ED122F1D465A06006A7E0A /* FizzBuzz.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +316,7 @@
 		D4ED12291D4659DF006A7E0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -322,12 +327,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.sme.FizzBuzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D4ED122A1D4659DF006A7E0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
