@@ -12,7 +12,7 @@ import XCTest
 class FizzBuzzTests: XCTestCase {
     
     func runTest(number: Int) -> String {
-        return FizzBuzz().play(number)
+        return FizzBuzz().playRound(number)
     }
     
     

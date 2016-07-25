@@ -11,8 +11,8 @@ import Foundation
 
 extension Int {
     
-    func isZero() -> Bool {
-        return self == 0 ? true : false
+    func isNotZero() -> Bool {
+        return self != 0 ? true : false
     }
     
     func toString() -> String {
@@ -29,32 +29,30 @@ enum DivisibleBy {
     case Three
     case Five
     case None
-
 }
 
 class FizzBuzz {
     
-    func play(number: Int) -> String {
+    func playRound(number: Int) -> String {
         
-        switch isDivisibleBy(number) {
-        case .Fifteen:
-            return "FizzBuzz"
+        switch divisibleBy(number) {
         case .Three:
             return "Fizz"
         case .Five:
             return "Buzz"
+        case .Fifteen:
+            return "FizzBuzz"
         default:
             return number.toString()
         }
     }
     
-    private func isDivisibleBy(number: Int) -> DivisibleBy {
+    private func divisibleBy(number: Int) -> DivisibleBy {
     
-        guard number != 0 else {
-            return .None
-        }
+        guard number.isNotZero() else { return .None }
         
-        let divisibleBy = (three: number.isDivisibeBy(3), five: number.isDivisibeBy(5))
+        let divisibleBy =
+            (three: number.isDivisibeBy(3), five: number.isDivisibeBy(5))
         
         switch divisibleBy {
         case (three: true, five: true):
