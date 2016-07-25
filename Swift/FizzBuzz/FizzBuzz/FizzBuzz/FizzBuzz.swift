@@ -24,28 +24,47 @@ extension Int {
     }
 }
 
+enum DivisibleBy {
+    case Fifteen
+    case Three
+    case Five
+    case None
+
+}
 
 class FizzBuzz {
     
     func play(number: Int) -> String {
         
-        return number.isZero() ? number.toString() : fizzBizzResult(number)
+        switch isDivisibleBy(number) {
+        case .Fifteen:
+            return "FizzBuzz"
+        case .Three:
+            return "Fizz"
+        case .Five:
+            return "Buzz"
+        default:
+            return number.toString()
+        }
     }
     
-    private func fizzBizzResult(number: Int) -> String {
-        
-        if number.isDivisibeBy(15) {
-            return "FizzBuzz"
+    private func isDivisibleBy(number: Int) -> DivisibleBy {
+    
+        guard number != 0 else {
+            return .None
         }
         
-        if number.isDivisibeBy(3) {
-            return "Fizz"
-        }
+        let divisibleBy = (three: number.isDivisibeBy(3), five: number.isDivisibeBy(5))
         
-        if number.isDivisibeBy(5) {
-            return "Buzz"
+        switch divisibleBy {
+        case (three: true, five: true):
+            return .Fifteen
+        case (three: true, five: false):
+            return .Three
+        case (three: false, five: true):
+            return .Five
+        default:
+            return .None
         }
-        
-        return number.toString()
     }
 }
