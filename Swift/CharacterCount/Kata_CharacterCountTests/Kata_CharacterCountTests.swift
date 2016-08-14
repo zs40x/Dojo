@@ -11,7 +11,7 @@ import XCTest
 
 class Kata_CharacterCountTests: XCTestCase {
     
-    func runTest(string: String) -> [Character:Int] {
+    func runTest(_ string: String) -> [Character:Int] {
         return CharacterCounter(string: string).CharacterCountAsDictionary()
     }
     

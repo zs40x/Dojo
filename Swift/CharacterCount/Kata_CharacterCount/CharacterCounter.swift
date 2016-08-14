@@ -30,18 +30,18 @@ public class CharacterCounter {
     
     
     func getLowercaseCharacters() -> String.CharacterView {
-        return string.lowercaseString.characters
+        return string.lowercased().characters
     }
     
-    func countCharacter(character: Character) {
+    func countCharacter(_ character: Character) {
         updateCharacterCount(character, count: getCountForCharacter(character))
     }
     
-    func updateCharacterCount(character: Character, count: Int) {
+    func updateCharacterCount(_ character: Character, count: Int) {
         dictionaryWithCharacterCount.updateValue(count, forKey: character)
     }
     
-    func getCountForCharacter(character: Character) -> Int {
+    func getCountForCharacter(_ character: Character) -> Int {
         var characterCount = 1
         
         if dictionaryWithCharacterCount.keys.contains(character) {
